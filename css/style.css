@@ -78,17 +78,12 @@ span {
 
 @media (max-width: 426px) {
     .swiper-button-next, .swiper-button-prev {
-        top: 100% !important;
+        top: 60% !important;
     }
-    /* .description-inner {
-        opacity: 1;
-        transform: translateY(0);
-        transition: all ease-in-out 800ms;
-    } */
 }
 
 @media (max-width: 769px) {
         .swiper-button-next, .swiper-button-prev {
-        top: 100% !important;
+        top: 60% !important;
     }
 }
