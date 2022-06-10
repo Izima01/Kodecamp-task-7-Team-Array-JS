@@ -1,0 +1,94 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/Ares.jpg);
+    background-position: left;
+    background-size: contain;
+}
+
+main {
+    padding: 0 3%;
+}
+
+img {
+    border-radius: 15px 15px 0 0;
+    transition: all ease-in-out 500ms;
+    z-index: 1;
+}
+
+.description {
+    position: relative;
+    background-color: #ff7f50;
+    top: -5px !important;
+    line-height: 24px;
+    padding: 0 15px 10px !important;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.description-inner {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all ease 800ms;
+}
+
+.description-inner:hover{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all ease-in-out 800ms;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.description p {
+    margin-bottom: 5px;
+}
+
+#name {
+    padding: 10px 0 0;
+}
+
+#namespan {
+    font-size: 28px;
+    padding-right: 0px;
+}
+
+span {
+    font-weight: bold;
+    padding-right: 14px;
+    font-size: 18px;
+}
+
+.member-box {
+    /* border-radius: 10px; */
+    border: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: 70% !important;
+}
+
+@media (max-width: 426px) {
+    .swiper-button-next, .swiper-button-prev {
+        top: 100% !important;
+    }
+    /* .description-inner {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all ease-in-out 800ms;
+    } */
+}
+
+@media (max-width: 769px) {
+        .swiper-button-next, .swiper-button-prev {
+        top: 100% !important;
+    }
+}
