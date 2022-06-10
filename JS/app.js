@@ -61,7 +61,17 @@ let teamMembers = [
         thingsLearnt: ["HTML", "CSS", "Bootstrap", "Javascript"],
         bestMovie: "Inglorious Basterds",
         age: 22,
-    }
+    },
+    {
+        names: "Oyindamola Ogunkunle",
+        track: "Beginner Frontend",
+        bestFood: "Amala with Abula",
+        complexion: "dark",
+        thingsLearnt: ["HTML", "CSS", "Bootstrap", "Javascript"],
+        bestMovie: "Nil",
+        age: 24,
+    },
+
 ]
 
 let names = document.querySelectorAll("name");
@@ -76,7 +86,7 @@ let bestMovie = document.querySelectorAll("#bestMovie");
 for (let i = 0; i < teamMembers.length; i ++) {
     let member = teamMembers[i]
     let textList = "";
-    textList += `${member.thingsLearnt} `;
+    textList += `${member.thingsLearnt}`;
     
 
     console.log(textList)
@@ -84,7 +94,7 @@ for (let i = 0; i < teamMembers.length; i ++) {
                 `<div class="swiper-slide">
                     <div class="member-box rounded-3 container">
                         <div class="image overflow-hidden">
-                            <img class="rounded-4 rounded-bottom img-fluid w-100" src="images/member${i+1}.jpg" height="500px">
+                            <img class="img-fluid w-100" src="images/member${i+1}.jpg" height="500px">
                         </div>
                         <div class="description w-100">
                             <div class="description-inner">

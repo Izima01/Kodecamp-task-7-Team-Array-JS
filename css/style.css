@@ -16,8 +16,12 @@ main {
 
 img {
     border-radius: 15px 15px 0 0;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 600ms;
     z-index: 1;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
 
 .description {
@@ -35,17 +39,13 @@ img {
 .description-inner {
     opacity: 0;
     transform: translateY(40px);
-    transition: all ease 800ms;
+    transition: all ease 400ms;
 }
 
 .description-inner:hover{
     opacity: 1;
     transform: translateY(0);
-    transition: all ease-in-out 800ms;
-}
-
-img:hover {
-    transform: scale(1.2);
+    transition: all ease-in-out 400ms;
 }
 
 .description p {
